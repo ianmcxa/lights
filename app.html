@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+	</head>
+	<body>
+		<div style="margin:auto;max-width:50rem">
+			<h3 style="margin-top:3rem">Living Room Christmas Lights</h3>
+			<button style="margin-right:2rem;" class="button button-outline" onclick="updateLight(0,1)" >On</button>
+			<button class="button button-outline" onclick="updateLight(0,0)" >Off</button>
+			
+			<h3 style="margin-top:3rem">Kitchen Christmas Lights</h3>
+			<button style="margin-right:2rem;" class="button button-outline" onclick="updateLight(1,1)" >On</button>
+			<button class="button button-outline" onclick="updateLight(1,0)" >Off</button>
+			
+			<h3 style="margin-top:3rem">Living Room Lamp</h3>
+			<button style="margin-right:2rem;" class="button button-outline" onclick="updateLight(2,1)" >On</button>
+			<button class="button button-outline" onclick="updateLight(2,0)" >Off</button>
+
+			<h3 style="margin-top:3rem">Bedroom Christmas Lights</h3>
+			<button style="margin-right:2rem;" class="button button-outline" onclick="updateLight(3,1)" >On</button>
+			<button class="button button-outline" onclick="updateLight(3,0)" >Off</button>
+
+			<h3 style="margin-top:3rem">Bedroom Lamp</h3>
+			<button style="margin-right:2rem;" class="button button-outline" onclick="updateLight(4,1)" >On</button>
+			<button class="button button-outline" onclick="updateLight(4,0)" >Off</button>
+		</div>
+	</body>
+	<script>
+		var updateLight = function(light, state) {
+			var request = new XMLHttpRequest();
+			request.open	('POST', '/update', true);
+			request.setRequestHeader('Content-Type', 'application/json');
+			request.send(JSON.stringify({'light': light, 'state': state}));
+		}
+	</script>
+</html>
