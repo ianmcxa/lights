@@ -1,0 +1,25 @@
+{
+  "name": "lights",
+  "author": "Ian Mcxa",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "lights",
+    "uuid": "e004deef-41eb-4cb8-99de-64c1fd2a8666",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "targetPlatforms": [
+        "diorite"
+    ], 
+    "displayName": "lights", 
+    "name": "lights", 
+    "messageKeys": {
+        "light": 10000, 
+        "state": 10001
+    }, 
+    "companyName": "Ian Mcxa", 
+    "enableMultiJS": true, 
+    "versionLabel": "1.0", 
+    "capabilities": [], 
+    "sdkVersion": "3", 
+    "appKeys": {
+        "light": 10000, 
+        "state": 10001
+    }, 
+    "longName": "lights", 
+    "shortName": "lights", 
+    "watchapp": {
+        "watchface": false
+    }, 
+    "resources": {
+        "media": []
+    }, 
+    "uuid": "e004deef-41eb-4cb8-99de-64c1fd2a8666"
+}
