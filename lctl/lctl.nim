@@ -6,7 +6,7 @@ proc change_light(light: int, state: int) =
         "light": light,
         "state": state,
     }
-    let response = client.request("http://172.22.22.16/update", httpMethod = HttpPost, body = $body)
+    let response = client.request("http://[2606:a000:1127:4082:ba27:ebff:fe59:23c]/update", httpMethod = HttpPost, body = $body)
 
 if paramCount() != 2:
     echo "usage: lctl <light> <state>"
