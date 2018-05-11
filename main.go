@@ -63,7 +63,7 @@ func main() {
 
 	// serve the static html homepage
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "app.html")
+		http.ServeFile(w, r, "./app.html")
 	})
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
