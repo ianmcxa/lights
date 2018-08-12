@@ -4,19 +4,13 @@
     ], 
     "displayName": "lights", 
     "name": "lights", 
-    "messageKeys": {
-        "light": 10000, 
-        "state": 10001
-    }, 
+    "messageKeys": {}, 
     "companyName": "Ian Mcxa", 
     "enableMultiJS": true, 
     "versionLabel": "1.0", 
     "capabilities": [], 
     "sdkVersion": "3", 
-    "appKeys": {
-        "light": 10000, 
-        "state": 10001
-    }, 
+    "appKeys": {}, 
     "longName": "lights", 
     "shortName": "lights", 
     "watchapp": {

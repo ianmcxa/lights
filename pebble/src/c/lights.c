@@ -13,7 +13,7 @@ static light light_codes[5] = {
    {"Office Lights", 1},
    {"Bedroom Lamp", 4},
    {"Bedroom Lights", 3},
-   {"Living Room Lights", 0}
+   {"Office Lamp", 0}
 };
 
 static int counter = 0;

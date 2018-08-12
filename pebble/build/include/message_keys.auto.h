@@ -6,5 +6,3 @@
 // DO NOT MODIFY - CHANGES WILL BE OVERWRITTEN
 //
 
-extern uint32_t MESSAGE_KEY_light;
-extern uint32_t MESSAGE_KEY_state;
