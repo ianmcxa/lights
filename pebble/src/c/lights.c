@@ -8,10 +8,12 @@ typedef struct light {
     int code;
 } light;
 
-static light light_codes[4] = {
+static light light_codes[6] = {
    {"Living Room Lamp", 2},
    {"Bedroom Lamp", 4},
    {"Office Lamp", 0},
+   {"Office Lights", 1},
+   {"Front Door", 5},
    {"Humidifier", 3}
 };
 

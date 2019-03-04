@@ -31,7 +31,7 @@ func main() {
 
 func sendCode(state State) {
 	body, _ := json.Marshal(state)
-	http.Post("http://[2606:a000:1127:4082:ba27:ebff:fe59:23c]/update",
+	http.Post("http://IP_ADDRESS/update",
 		"application/json", bytes.NewBuffer(body))
 }
 
